@@ -46,12 +46,23 @@ nav a {
 }
 /* Hero Component */
 #hero {
+    background: #8980c2 url(images/zebra-hero.jpg) 100%;
+}
+#hero .fore-ground {
     display: flex;
     flex-direction: column;
-    background: #8980c2 url(images/zebra-hero.jpg) 100%;
+    position: relative;
     background-size: cover;
     align-items: center;
     padding: 2rem 0;
+}
+#hero .darken {
+    position: absolute;
+    width: 100%;
+    min-height: 605px;
+    background: #000;
+    opacity: 0.4;
+    z-index: 0;
 }
 #hero h1, #hero a {
     color: #fff;
@@ -114,4 +125,13 @@ main article p {
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+/* Footer component */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+}
+footer p {
+    font-family: 'Bree serif', 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
 }
